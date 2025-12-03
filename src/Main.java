@@ -27,12 +27,15 @@ public class Main {
         System.out.println("Имя переменной varDouble с типом double равно " + varDouble);
 
         //Task2
+        //Пропустил одно значение, согласен.
         byte varByteTaskTwo = 67;
-        short varShotTaskTwo = -159;
+        short varShortTaskTwo = -159;
+        short varShortTaskTow = 569;
         int varIntTaskTwo = 27897;
         long varLongTaskTwo = 987678965549L;
-        float varFloatTaskTwo = 2.786f;
+        float varFloatTaskTwo = 2.786F;
         double varDoubleTaskTwo = 27.12;
+
 
         //Task3
         System.out.println("==TASK 3==");
@@ -44,19 +47,21 @@ public class Main {
         System.out.println("На каждого ученика рассчитано " + howManyStudentsHasPaper + " листов бумаги.");
 
         //Task 4
+        //Вопрос как я понимаю в слове Performance(производительность).
+        //В именах переменных указывал предлог Per(за).
+        //Вот тут то и появилось не понимание в именах переменных с camelCase. Я правильно понял?
+        //Поменял имена переменных.
+        //Сделал решение более простым
         System.out.println("==TASK 4==");
-        float machinePerformance = 16.0f;
-        double timeForOneBottle = (2.0 * 60.0) / machinePerformance;
-        double amountPerTwentyMin = (60*20) / timeForOneBottle;
-        double amountPerDay = (60*(24*60)) / timeForOneBottle;
-        double amountPerThreeDays = (60*((24*60)*3)) /timeForOneBottle;
-        double amountPerOneMonth = (60*((24*60)*30)) / timeForOneBottle;
-
-        System.out.println("За " + timeForOneBottle + " секунд машина произвела 1 бутылку");
-        System.out.println("За 20 минут машина произвела " + amountPerTwentyMin +" штук бутылок");
-        System.out.println("За 1 день машина произвела " + amountPerDay + " штук бутылок");
-        System.out.println("За 3 дня машина произвела " + amountPerThreeDays + " штук бутылок");
-        System.out.println("За 1 месяц машина произвела " + amountPerOneMonth +" штук бутылок");
+        byte machinePerformance = 16;
+        int amountAtTwentyMin = (20 /2) * machinePerformance;
+        int amountOnDay = ((24 * 60) / 2) * machinePerformance;
+        int amountOnThreeDays = ((1440 * 3) / 2) * machinePerformance;
+        int amountInOneMonth = ((1440 * 30) / 2) * machinePerformance;
+        System.out.println("За 20 минут машина произвела " + amountAtTwentyMin +" штук бутылок");
+        System.out.println("За 1 день машина произвела " + amountOnDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + amountOnThreeDays + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + amountInOneMonth +" штук бутылок");
 
         //Task5
         System.out.println("==TASK 5==");
@@ -81,6 +86,7 @@ public class Main {
         System.out.println("Вес спорт завтрака равен " + weightKilogram + " килограмм");
 
         //Task 7
+        //Вопрос в слове average(средний) - это не aver(утверждать) age(возраст);
         System.out.println("==TASK 7==");
         short losingWeight = 7;
         short slowLosingWeight = 250;
