@@ -54,23 +54,26 @@ public class Main {
         //Сделал решение более простым
         System.out.println("==TASK 4==");
         byte machinePerformance = 16;
-        int amountAtTwentyMin = (20 /2) * machinePerformance;
-        int amountOnDay = ((24 * 60) / 2) * machinePerformance;
-        int amountOnThreeDays = ((1440 * 3) / 2) * machinePerformance;
-        int amountInOneMonth = ((1440 * 30) / 2) * machinePerformance;
+        float minutes = 2f;
+        float countBottleInOneMin = machinePerformance / minutes;
+        float amountAtTwentyMin = 20 * countBottleInOneMin;
+        float amountOnDay = (24 * 60) * countBottleInOneMin;
+        float amountOnThreeDays = (1440 * 3) * countBottleInOneMin;
+        float amountInOneMonth = (1440 * 30) * countBottleInOneMin;
         System.out.println("За 20 минут машина произвела " + amountAtTwentyMin +" штук бутылок");
         System.out.println("За 1 день машина произвела " + amountOnDay + " штук бутылок");
         System.out.println("За 3 дня машина произвела " + amountOnThreeDays + " штук бутылок");
         System.out.println("За 1 месяц машина произвела " + amountInOneMonth +" штук бутылок");
 
         //Task5
+        //Согласен, всё же значения переменных могут измениться, хорошее замечание. Спасибо!
         System.out.println("==TASK 5==");
         short allCansOfPaint = 120;
         byte whiteCansOfPaintPerClass = 2;
         byte brownCansOfPaintPerClass = 4;
         int classRooms = allCansOfPaint / (whiteCansOfPaintPerClass + brownCansOfPaintPerClass);
-        int allWhiteCansOfPaint = 2 * 20;
-        int allBrownCansOfPaint = 4 * 20;
+        int allWhiteCansOfPaint = whiteCansOfPaintPerClass * classRooms;
+        int allBrownCansOfPaint = brownCansOfPaintPerClass * classRooms;
         System.out.println("В школе, где " + classRooms + " классов, нужно " + allWhiteCansOfPaint + " банок белой краски и " + allBrownCansOfPaint + " банок коричневой краски" );
 
         //Task6
