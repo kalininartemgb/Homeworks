@@ -46,11 +46,11 @@ public class Main {
 
         //Task 5
         System.out.println("==TASK 5==");
-        int ageKid = 10;
+        int ageKid = 23;
         if (ageKid < 5) {
             System.out.println("Если возраст ребенка равен " + ageKid + " лет, то ему нельзя кататься на аттракционе.");
         }else
-            if (ageKid > 5 && ageKid <= 14) {
+            if (ageKid >= 5 && ageKid <= 14) {
             System.out.println("Если возраст ребенка равен " + ageKid + " лет, то ему можно кататься на аттракционе в сопровождении взрослого.");
         }else
             if (ageKid > 14) {
